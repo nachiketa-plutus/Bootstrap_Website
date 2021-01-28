@@ -10,13 +10,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>CineINC.: Curating movies since forever</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!--navbar (navigation bar)-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #188502a2;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CineInc.</a>
+      <a class="navbar-brand" href="#"><img src="CineINC..png" , alt="image" , height="90" , width="90"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,14 +26,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="/"><strong>About</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Movie Reviews</a>
+            <a class="nav-link" href="/moviereviews.html"><strong>Movie Reviews</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Top movies this week</a>
+            <a class="nav-link" href="/Topmovies.html"><strong>Top movies this week</strong></a>
           </li>
+
+          <!--For dropdown menu-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -48,77 +52,55 @@
           </li>
         </ul>
         <form class="d-flex">
+
+          <!--For Search bar on the right most side of navbar-->
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button" class="btn btn-outline-dark">Search</button>
         </form>
       </div>
     </div>
   </nav>
-  <div class="alert alert-primary" role="alert">
-    An association can always come handy, <a href="#" class="alert-link">sign up</a> now!
-  </div>
-  <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>CineInc.</strong> family just got bigger. Get started by clicking the button below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Blog</a></li>
-      <li class="breadcrumb-item"><a href="#">Movies</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Latest this week</li>
-    </ol>
-  </nav>
-  <div class="card" style="width: 18rem;">
-    <img src="https://source.unsplash.com/400x400/?prison," class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">The Shawshank Redemption (1995) dir.: Frank Darabont</h5>
-      <p class="card-text">An absolute classic, starring Morgan Freeman and Tim Robbins. Rated highest on IMDB. Our
-        opinion: Will make you shake on your legs, must-watch!</p>
-      <div class="card">
-        <div class="card-header">
-          Quote
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>Hope is a good thing, maybe the best of things! And no good thing ever dies</p>
-            <footer class="blockquote-footer">Tim Robbins as 'Andy Dufresne' in <cite title="Source Title">The Shawshank
-                Redemption</cite></footer>
-          </blockquote>
-        </div>
-      </div>
-      <a href="#" class="btn btn-outline-info">Detailed Review</a>
-    </div>
-  </div>
-  <div class="container">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="container my-4">
+     <!-- theme selection dark with white background and bold caption-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://source.unsplash.com/400x400/?movie,cinematography,VFX,cinema" class="d-block w-100"
-            alt="...">
+        <div class="carousel-item active" data-bs-interval="6000">
+
+          <img src="Korea.jpg" class="d-block w-100"
+            alt="image" height="500" width="1100">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5><strong>Welcome to CineINC.</strong></h5>
+            <p><strong>From Western Classics to Korean Masterpieces</strong></p>
+            <button class="btn btn-danger">Top Classics</button>
+            <button class="btn btn-primary">Nerve Gripping Thrillers</button>
+            <button class="btn btn-success">Sci-Fi</button>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://source.unsplash.com/400x400/?movie,script,screenplay,direction,video,cinema"
-            class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="6000">
+
+          <img src="NolanFIncher.jpg" class="d-block w-100" alt="image" height="500" width="1100">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5><strong>Welcome to CineINC.</strong></h5>
+            <p><strong>From Nolan to Fincher</strong></p>
+            <button class="btn btn-danger">Top Classics</button>
+            <button class="btn btn-primary">Nerve Gripping Thrillers</button>
+            <button class="btn btn-success">Sci-Fi</button>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="https://source.unsplash.com/400x400/?movie,art,cinema" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="Pitt-DiCaprio-Tarantino1.jpg" class="d-block w-100" alt="image" 
+          height="500" width="1100">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5><strong>Welcome to CineINC.</strong></h5>
+            <p><strong>From Leo to Pitt</strong></p>
+            <button class="btn btn-danger">Top Classics</button>
+            <button class="btn btn-primary">Nerve Gripping Thrillers</button>
+            <button class="btn btn-success">Sci-Fi</button>
           </div>
         </div>
       </div>
@@ -132,15 +114,84 @@
       </a>
     </div>
   </div>
-  <!-- Optional JavaScript; choose one of the two! -->
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">Off the record </strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Chasing light in a labyrinth.</a>
+            </h3>
+            <div class="mb-1 text-muted"><strong>JAN 27</strong></div>
+            <p class="card-text mb-auto">For a guy who was better known for having a discomforting aura around him, 
+              he left us a very comforting legacy, his idiosyncrasies.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img src="Stanley.jpg" alt="image" height="250" width="200">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success">Weekend Frivolity</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Dufus to wear a toga?</a>
+            </h3>
+            <div class="mb-1 text-muted"><strong>JAN 27</strong></div>
+            <p class="card-text mb-auto">Despite best intentions, Clooney has stated unequivocally that has no inclination 
+              towards teaming up with the Coen brothers one more time. </p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img src="Clooney.jpg" alt="image" height="250" width="200"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">Off the record </strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Chasing light in a labyrinth.</a>
+            </h3>
+            <div class="mb-1 text-muted"><strong>JAN 27</strong></div>
+            <p class="card-text mb-auto">For a guy who was better known for having an omnipresent and discomforting aura around him, 
+              he left us a very comforting legacy. He left us his idiosyncrasies.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img src="image-asset.png" alt="image" height="250" width="200">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success">Weekend Frivolity</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Dufus to wear a toga?</a>
+            </h3>
+            <div class="mb-1 text-muted"><strong>JAN 27</strong></div>
+            <p class="card-text mb-auto">Despite best intentions, Clooney has expressed it unequivocally that he has no inclination 
+              towards teaming up with the Coen brothers one more time. </p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img src="mcdinjo-ec016mod-1547154552.jpg" alt="image" height="250" width="200"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
